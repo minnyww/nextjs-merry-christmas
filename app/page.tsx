@@ -7,6 +7,7 @@ import TextRevealByWord from "@/components/ui/text-reveal";
 import Image from "next/image";
 
 import image1 from "./image1.jpg";
+
 import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
 import MorphingText from "@/components/ui/morphing-text";
 
@@ -53,6 +54,20 @@ export default function Home() {
               </ScratchToReveal>
               <div style={{ height: "60vh" }} />
               <MorphingText texts={["I", "Love", "You", "😘"]} />
+              <video
+                height="452"
+                width="768"
+                controls
+                autoPlay={true}
+                muted
+                preload="auto"
+              >
+                <source
+                  src="https://firebasestorage.googleapis.com/v0/b/chayen.appspot.com/o/video1.mp4?alt=media&token=ceea756c-02ea-4096-9e91-cac70b90c8a8"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </NeonGradientCard>
