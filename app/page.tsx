@@ -15,15 +15,15 @@ import Snowfall from "react-snowfall";
 export default function Home() {
   return (
     <div className="flex items-center justify-center min-h-screen p-8">
-      <Snowfall
-        style={{
-          position: "fixed",
-          width: "100vw",
-          height: "100vh",
-        }}
-      />
       <div className="max-w-[600px] w-full">
-        <Snowfall />
+        <Snowfall
+          style={{
+            width: "100vw",
+            height: "100vh",
+            zIndex: 2000,
+            position: "fixed",
+          }}
+        />
         <NeonGradientCard>
           <div className="flex flex-col items-center justify-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
             <div className="z-10 flex min-h-64 items-center justify-center dark:bg-black">
